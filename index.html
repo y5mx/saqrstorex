@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        @import url('fonts/default.css');
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#303030">
+    <meta name="msapplication-navbutton-color" content="#303030">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#303030">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/998538899410391091/1008836750912790679/saqrlogo.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://cdn.discordapp.com/attachments/998538899410391091/1008836750912790679/saqrlogo.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://cdn.discordapp.com/attachments/998538899410391091/1008836750912790679/saqrlogo.png">
+    <title>SAQR</title>
+    <meta property="og:title" content="saqrstore" />
+    <meta property="og:type" content="store" />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:locale:alternate" content="ar_AR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:url" content="https://33stores.store" />
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/998538899410391091/1008836750912790679/saqrlogo.png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="300" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="themes/default/assets/css/slick-theme.css">
+    <link rel="stylesheet" href="cp/assets/css/icons/sallaicons/style.css" />
+    <link rel="stylesheet" href="themes/theme_6/assets/css/main.css">
+
+    <style type="text/css">
+         :root {
+            --main-color: #303030;
+            --main-text-color: #101010;
+            --main-text-color2: #000000;
+            --infinte-color: #101010;
+            --main-text-color-dark: #303030;
+            /* New Coloring Pattern: */
+            --color-main: #303030;
+            --color-main-d: #161616;
+            --color-main-l: #565656;
+            --color-main-reverse: #303030;
+            --color-text: #5a5a5a;
+            --color-text-reverse: #fcfcfc;
+            --color-title: #000000;
+        }
+        
+        .store-header,
+        .header-bar,
+        .store-header-min {
+            background: var(--main-color);
+        }
+        
+        .store-header h1 a,
+        .store-header-min h1 {
+            color: #fff;
+        }
+        
+        .dropdown-store-header.open .dropdown-toggle,
+        .dropdown-store-header.open .dropdown-toggle {
+            background: var(--main-color);
+            color: #fff;
+        }
+        /* .store-contact a { color: var(--main-text-color); } */
+        /*a.media-heading, a.product-link { color: var(--main-text-color); }*/
+        
+        .pace-demo {
+            background: var(--main-text-color) !important;
+            /*darker*/
+        }
+        
+        .pace .pace-progress {
+            background: var(--main-text-color2) !important;
+            /*darker*/
+        }
+        
+        .add-cart {
+            color: var(--main-text-color);
+            /*darker*/
+            border: 1px solid var(--main-text-color);
+            /*darker*/
+        }
+        
+        .add-cart:hover,
+        .add-cart:focus,
+        .add-cart-large:hover,
+        .add-cart-large:focus,
+        .order-btn:hover,
+        .order-btn:focus {
+            background: var(--main-text-color);
+            /*darker*/
+            border-color: var(--main-text-color);
+        }
+        
+        .cart-nav-submit,
+        .cart-nav-more,
+        .cart-nav-solid {
+            background: var(--main-text-color);
+            /*darker*/
+            border-color: var(--main-text-color);
+            /*darker*/
+        }
+        
+        .add-cart-large,
+        .order-btn {
+            background: var(--main-text-color);
+            border-color: var(--main-text-color);
+        }
+        
+        .cart-nav-light:hover,
+        .cart-nav-light:active,
+        .cart-nav-light:focus {
+            color: var(--main-color);
+        }
+        
+        .cart-nav-light {
+            border-color: var(--main-text-color);
+            /*darker*/
+            color: var(--main-text-color);
+            /*darker*/
+        }
+        
+        .cart-line {
+            border-color: var(--main-color);
+            /*lighter*/
+        }
+        
+        .cart-number {
+            color: var(--main-text-color);
+            /*lighter*/
+            border-color: var(--main-color);
+            /*lighter*/
+        }
+        
+        .active-step .cart-number {
+            background: var(--main-color);
+            border-color: var(--main-color);
+        }
+        
+        .cart-title {
+            color: var(--main-color) !important;
+            /*lighter*/
+        }
+        
+        #salla_bar {
+            border-top-color: var(--main-color);
+        }
+        
+        #salla_bar .checkout-button {
+            background: var(--main-text-color);
+        }
+        
+        .choice.border-info-600.text-info-800 {
+            color: var(--main-text-color) !important;
+            border-color: var(--main-text-color) !important;
+        }
+        
+        .payment-method.active {
+            background: var(--main-text-color) !important;
+        }
+        
+        .pagination>.active>span {
+            background-color: var(--main-text-color) !important;
+            border-color: var(--main-text-color) !important;
+        }
+        /*.order-num { color: var(--main-text-color); }*/
+        
+        .product-side-container .product-order-container .panel-heading {
+            background: var(--main-color) !important;
+            border-bottom-color: var(--main-color) !important;
+            color: #fff !important;
+        }
+        
+        .testimonial-header,
+        .owl-theme .owl-nav [class*=owl-] {
+            background: var(--main-color) !important;
+        }
+        
+        a:hover,
+        a:focus {
+            color: #fff;
+        }
+        
+        .sub-nav__menu:hover svg {
+            fill: var(--main-text-color);
+        }
+        
+        .site-header__cart .badge {
+            background: var(--main-text-color);
+        }
+        
+        .circle-action:hover {
+            background: var(--main-text-color);
+            border-color: var(--main-text-color);
+        }
+        
+        .sub-nav .main-menu>li:hover>a,
+        .sub-nav .main-menu>li:hover>a>i {
+            color: var(--main-text-color);
+        }
+        
+        .sub-nav li>ul a:hover {
+            color: var(--main-text-color2);
+        }
+        
+        .slick-active button {
+            background-color: var(--main-text-color) !important;
+        }
+        
+        .product:hover .product-title {
+            color: var(--main-text-color);
+        }
+        
+        .product-price,
+        .product-details__price {
+            color: var(--main-text-color);
+        }
+        
+        .product-add:hover {
+            background-color: var(--main-color) !important;
+            border-color: var(--main-color);
+        }
+        
+        .sub-nav__menu:hover {
+            color: var(--main-color) !important;
+        }
+        
+        .login-container .border-yellow-dark {
+            border-color: var(--main-text-color);
+        }
+        
+        .login-container .text-yellow-dark {
+            color: var(--main-text-color);
+        }
+        
+        .sub-nav-header {
+            background: var(--main-color);
+        }
+        
+        .sub-nav-header a {
+            color: var(--main-color);
+        }
+        
+        .btn-primary {
+            background: var(--main-text-color);
+            border-color: var(--main-text-color);
+        }
+        
+        .btn-primary:focus,
+        .btn-primary.focus,
+        .btn-primary:hover,
+        .btn-primary:active,
+        .btn-primary.active,
+        .btn-primary.active:hover,
+        .btn-primary:active:hover {
+            background: var(--main-text-color2);
+            border-color: var(--main-text-color2);
+        }
+        
+        .page-box .panel-heading .product-title {
+            color: var(--main-text-color) !important;
+        }
+        
+        #ask_register_link {
+            color: var(--main-text-color) !important;
+        }
+        
+        .product-details__hot strong {
+            color: var(--main-text-color) !important;
+        }
+        
+        @media (min-width: 992px) {
+            .sub-nav li>ul a:hover {
+                background: var(--main-text-color);
+                color: #fff;
+            }
+        }
+        
+        .site-header__cart .badge {
+            background: var(--main-text-color);
+        }
+        
+        .circle-action:hover {
+            background: var(--main-text-color);
+            border-color: var(--main-text-color);
+        }
+        
+        .sub-nav .main-menu>li:hover>a {
+            color: var(--main-text-color2);
+        }
+        
+        .slick-active button {
+            background-color: var(--main-text-color) !important;
+        }
+        
+        .product:hover .product-title {
+            color: var(--main-text-color);
+        }
+        
+        .product-price:hover {
+            color: var(--main-text-color);
+        }
+        
+        .product-add:hover {
+            background: var(--main-text-color);
+        }
+        
+        .social__item a:hover {
+            background: #fff;
+            border-color: var(--main-text-color);
+        }
+        
+        .footer-main {
+            border-top-color: var(--main-color);
+        }
+        
+        .feature-item__icon {
+            border-color: var(--main-text-color);
+        }
+        
+        .landing-page-feature-item__icon {
+            color: var(--main-text-color);
+            border-color: var(--main-text-color);
+        }
+        
+        .checker span {
+            border-color: var(--main-text-color) !important;
+        }
+        
+        .btn-order-details {
+            background: var(--main-text-color) !important;
+        }
+        
+        .section-header .section--title {
+            color: var(--main-text-color);
+        }
+    </style>
+    <link href="css/intlTelInput.css" rel="stylesheet">
+    <link rel="stylesheet" href="themes/theme_6/assets/css/theme-custom.css">
+    <style>
+        body {
+            background: #000;
+        }
+        
+        .sub-nav {
+            background-color: #1c1c1c;
+        }
+        
+        salla-theme_6 .product {
+            background-color: #000;
+        }
+        
+        .product-title {
+            color: #fff;
+        }
+        
+        .section-header .section--title {
+            color: #fff;
+        }
+        
+        a {
+            color: #fff;
+        }
+        
+        .salla-theme_6 .product {
+            background-color: #0c0c0c;
+        }
+        
+        .product-price {
+            color: #0954a7;
+        }
+        
+        .product-details__price {
+            color: #0954a7;
+        }
+        
+        .salla-theme_6 .product .product-footer .product-add.add_to_cart_btn {
+            background-color: #1e1e1e;
+        }
+        
+        .salla-theme_6 .section-header .btn.btn-rounded {
+            background-color: #292929;
+        }
+    </style>
+
+    <body class="store-home salla-theme_6 color-mode-light font-dinnextltarabic-regular">
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGFC6FV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript>
+    <a href="https://www.enable-javascript.com/" rel="nofollow noopener noreferrer"
+       target="_blank"></a>.
+</noscript>
+        <header class="site-header">
+            <div class="sub-header p-10 d-none d-lg-block">
+                <div class="container">
+                    <div class="row header-wrapper">
+                        <div class="col-lg-6">
+                        </div>
+                        <div class="col-lg-6 text-left">
+                            <div id="cl_switcher_wrapper">
+                                <div id="cl_switcher">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-3 header-top">
+                    <div class="row header-wrapper">
+                        <div class="col-md-3 logo-wrapper d-flex d-lg-block">
+                            <a href="#" class="sub-nav__menu ml-2">
+                            </a>
+                            <h1 class="logo">
+                                <a href="index.html">
+                                    <a href="" class="d-lg-inline-block th-main-phone-no" style="direction: ltr">
+                                        <span>Contact Us</span>
+                                        <span class="sicon-contact-book"></span>
+                                    </a>
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="col-lg-6 text-left">
+                            <div id="cl_switcher_wrapper">
+                                <div id="cl_switcher">
+                                    <button id="cl_toggle" type="button" role="button" class="btn">
+                            <i class="flag iti-flag sa"></i>
+                            <span>ر.س</span>
+                            </button>
+                                    <ul id="cl_list">
+                                        <li class="col">
+                                            <span class="col__title"><h4>العملة</h4></span>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178120" value="AED" data-symbol>
+                                                <label for="currency_opt_178120">
+                            <i class="flag iti-flag ae"></i>
+                            <span>درهم اماراتي</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178135" value="AUD" data-symbol="$">
+                                                <label for="currency_opt_178135">
+                            <i class="flag iti-flag au"></i>
+                            <span>دولار استرالي</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178123" value="BHD" data-symbol>
+                                                <label for="currency_opt_178123">
+                            <i class="flag iti-flag bh"></i>
+                            <span>دينار بحريني</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178146" value="CAD" data-symbol="$">
+                                                <label for="currency_opt_178146">
+                            <i class="flag iti-flag ca"></i>
+                            <span>دولار كندي</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178140" value="CNY" data-symbol="¥">
+                                                <label for="currency_opt_178140">
+                            <i class="flag iti-flag cn"></i>
+                            <span>رنمينبي</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178129" value="DZD" data-symbol>
+                                                <label for="currency_opt_178129">
+                            <i class="flag iti-flag dz"></i>
+                            <span>دينار جزائري</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178126" value="EGP" data-symbol="£">
+                                                <label for="currency_opt_178126">
+                            <i class="flag iti-flag eg"></i>
+                            <span>جنيه مصري</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178136" value="EUR" data-symbol="€">
+                                                <label for="currency_opt_178136">
+                            <i class="flag iti-flag eu"></i>
+                            <span>يورو</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178141" value="GBP" data-symbol="£">
+                                                <label for="currency_opt_178141">
+                            <i class="flag iti-flag gb"></i>
+                            <span>جنيه استرليني</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178137" value="IDR" data-symbol="Rp">
+                                                <label for="currency_opt_178137">
+                            <i class="flag iti-flag id"></i>
+                            <span>روبية إندونيسية</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178133" value="ILS" data-symbol="₪">
+                                                <label for="currency_opt_178133">
+                            <i class="flag iti-flag il"></i>
+                            <span>New Shekels</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178142" value="INR" data-symbol="Rp">
+                                                <label for="currency_opt_178142">
+                            <i class="flag iti-flag in"></i>
+                            <span>روبية هندية</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178124" value="IQD" data-symbol>
+                                                <label for="currency_opt_178124">
+                            <i class="flag iti-flag iq"></i>
+                            <span>دينار عراقي</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178138" value="JOD" data-symbol>
+                                                <label for="currency_opt_178138">
+                            <i class="flag iti-flag jo"></i>
+                            <span>دينار أردني</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178143" value="JPY" data-symbol="¥">
+                                                <label for="currency_opt_178143">
+                            <i class="flag iti-flag jp"></i>
+                            <span>ين ياباني</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178121" value="KWD" data-symbol>
+                                                <label for="currency_opt_178121">
+                            <i class="flag iti-flag kw"></i>
+                            <span>دينار كويتي</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178134" value="LBP" data-symbol="£">
+                                                <label for="currency_opt_178134">
+                            <i class="flag iti-flag lb"></i>
+                            <span>ليرة لبنانية</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178128" value="LYD" data-symbol>
+                                                <label for="currency_opt_178128">
+                            <i class="flag iti-flag ly"></i>
+                            <span>دينار ليبي</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178131" value="MAD" data-symbol>
+                                                <label for="currency_opt_178131">
+                            <i class="flag iti-flag ma"></i>
+                            <span>درهم مغربي</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178148" value="MRO" data-symbol>
+                                                <label for="currency_opt_178148">
+                            <i class="flag iti-flag mr"></i>
+                            <span>أوقية موريتانية</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178147" value="MYR" data-symbol="RM">
+                                                <label for="currency_opt_178147">
+                            <i class="flag iti-flag my"></i>
+                            <span>رينغيت ماليزي</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178125" value="OMR" data-symbol="﷼">
+                                                <label for="currency_opt_178125">
+                            <i class="flag iti-flag om"></i>
+                            <span>ريال عماني</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178144" value="PKR" data-symbol="₨">
+                                                <label for="currency_opt_178144">
+                            <i class="flag iti-flag pk"></i>
+                            <span>روبية باكستانية</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178122" value="QAR" data-symbol="﷼">
+                                                <label for="currency_opt_178122">
+                            <i class="flag iti-flag qa"></i>
+                            <span>ريال قطري</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_84759" value="SAR" checked data-symbol="ر.س">
+                                                <label for="currency_opt_84759">
+                            <i class="flag iti-flag sa"></i>
+                            <span>ريال سعودي</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178127" value="SDG" data-symbol>
+                                                <label for="currency_opt_178127">
+                            <i class="flag iti-flag sd"></i>
+                            <span>جنيه سوداني</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178139" value="SEK" data-symbol="kr">
+                                                <label for="currency_opt_178139">
+                            <i class="flag iti-flag se"></i>
+                            <span>كرونة سويدية</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178132" value="SYP" data-symbol="£">
+                                                <label for="currency_opt_178132">
+                            <i class="flag iti-flag sy"></i>
+                            <span>ليرة سورية</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178130" value="TND" data-symbol>
+                                                <label for="currency_opt_178130">
+                            <i class="flag iti-flag tn"></i>
+                            <span>دينار تونسي</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_178145" value="TRY" data-symbol="TL">
+                                                <label for="currency_opt_178145">
+                            <i class="flag iti-flag tr"></i>
+                            <span>ليرة تركية</span>
+                            </label>
+                                            </div>
+                                            <div class="checkbox radio">
+                                                <input name="currency_option" type="radio" id="currency_opt_84760" value="USD" data-symbol="$">
+                                                <label for="currency_opt_84760">
+                            <i class="flag iti-flag us"></i>
+                            <span>دولار أمريكي</span>
+                            </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="sub-nav">
+            <div class="container-fluid sub-nav-content">
+                <button class="sub-nav__close">
+<svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="m50 10c-22.109 0-40 17.883-40 40 0 22.109 17.891 40 40 40 22.117 0 40-17.891 40-40 0-22.121-17.879-40-40-40zm-15.25 23c0.074219-0.003906 0.14453-0.003906 0.21875 0 0.53906-0.003906 1.0586 0.20703 1.4375 0.59375l13.594 13.562 13.562-13.562c0.36328-0.37109 0.85547-0.58203 1.375-0.59375 0.82812-0.035156 1.5938 0.44922 1.918 1.2109 0.32812 0.76562 0.14844 1.6484-0.44922 2.2266l-13.594 13.594 13.594 13.562c0.37891 0.375 0.58984 0.88672 0.58984 1.4219 0 0.53125-0.21094 1.043-0.58984 1.4219-0.375 0.375-0.88672 0.58984-1.4219 0.58984s-1.043-0.21484-1.4219-0.58984l-13.562-13.594-13.594 13.594c-0.78516 0.78516-2.0586 0.78516-2.8438 0s-0.78516-2.0586 0-2.8438l13.562-13.562-13.562-13.594c-0.56641-0.54297-0.76562-1.3633-0.50781-2.1016 0.25391-0.73828 0.91797-1.2617 1.6953-1.3359z" fill-rule="evenodd" />
+</svg>
+</button>
+                <div class="sub-nav-header">
+                </div>
+                <ul class="main-menu">
+                    </li>
+                </ul>
+                </li>
+                </a>
+                </li>
+                </ul>
+                </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <section class="section" data-type="banner">
+            <div class="container banner">
+                </a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section-header d-flex">
+                    <h2 class="section--title">
+                        <span ">الأكثر طلباً</span>
+                    </h2>
+                </div>
+                <div class="row products-grid ">
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="https://discord.gg/saqr " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/11.png " alt="FBI Premium - بكج قوات الخاصة " src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    FBI Premium - بكج قوات الخاصة
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                    <span class="product-price " style="color: #0954a7 " dir="ltr ">$29.99</span>
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " style="color: #0954a7 " dir="ltr ">$29.99</span>
+                                </p>
+                                <a href="https://discord.gg/saqr " class="product-add add_to_cart_btn " data-product-id="117441863 " data-price="3.04 " data-currency="SAR " data-is-donation=" ">
+                                    <span class="sicon-cart "></span>
+                                    <span>إضافة للسلة</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="https://discord.gg/saqr " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/12.png " alt="Cia Pack - بكج القوات السرية " src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    Cia Pack - بكج القوات السرية
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                    <span class="product-price " style="color: #0954a7 " dir="ltr ">$24.99</span>
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " style="color: #0954a7 " dir="ltr ">$24.99</span>
+                                </p>
+                                <a href="https://discord.gg/saqr " class="product-add add_to_cart_btn " data-product-id="1053700786 " data-price="101.25 " data-currency="SAR " data-is-donation=" ">
+                                    <span class="sicon-cart "></span>
+                                    <span>إضافة للسلة</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="https://discord.gg/saqr " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/19.png " alt="SAQR FILES V7 - ملفات صقر النسخة السابعة " src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    SAQR FILES V7 - ملفات صقر
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " style="color: #0954a7 " dir="ltr ">$94.99</span>
+                                </p>
+                            </p>
+                            <span class="not-available ">تواصل معنا</span>
+                        </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="https://discord.gg/saqr " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/1.png " alt="Custom Cars Pack - بكج سيارات " src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    Custom Cars Pack - بكج سيارات
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " style="color: #0954a7 " dir="ltr ">$19.99</span>
+                                </p>
+                                    <span  class="not-available ">تواصل معنا</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section ">
+            <div class="container ">
+                <div class="section-header d-flex ">
+                    <h2 class="section--title ">
+                        <span>منتجاتنا</span>
+                    </h2>
+                </div>
+                <div class="row products-grid ">
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="https://discord.gg/saqr " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/3.png " alt="Grappler Gun - سكرت القرابلر " src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    Grappler Gun - سكرت القرابلر
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                    <span class="product-price " dir="ltr ">$9.99</span>
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " dir="ltr ">$9.99</span>
+                                </p>
+                                <a href="https://discord.gg/saqr " class="product-add add_to_cart_btn " data-product-id="163766677 " data-price="5.13 " data-currency="SAR " data-is-donation=" ">
+                                    <span class="sicon-cart "></span>
+                                    <span>إضافة للسلة</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="https://discord.gg/saqr " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/4.png " alt="House Heist - سرقة المنزل " src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    House Heist - سرقة المنزل
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                    <span class="product-price " dir="ltr ">$19.99</span>
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " dir="ltr ">$19.99</span>
+                                </p>
+                                <a href="https://discord.gg/saqr " class="product-add add_to_cart_btn " data-product-id="1887815507 " data-price="70.88 " data-currency="SAR " data-is-donation=" ">
+                                    <span class="sicon-cart "></span>
+                                    <span>إضافة للسلة</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="https://discord.gg/saqr " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/5.png " alt=Weed Tree - زراعة الأشجار src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    Weed Tree - زراعة الأشجار
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                    <span class="product-price " dir="ltr ">$19.99</span>
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " dir="ltr ">$19.99</span>
+                                </p>
+                                <a href="https://discord.gg/saqr " class="product-add add_to_cart_btn " data-product-id="759540843 " data-price="5.06 " data-currency="SAR " data-is-donation=" ">
+                                    <span class="sicon-cart "></span>
+                                    <span>إضافة للسلة</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="https://discord.gg/saqr " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/9.png " alt="Shark Sles Script FiveM - سكربت " src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    Island Heist - سرقة الجزيرة
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                    <span class="product-price " dir="ltr ">19.99$</span>
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " dir="ltr ">19.99$</span>
+                                </p>
+                                <a href="https://discord.gg/saqr " class="product-add add_to_cart_btn " data-product-id="1053700786 " data-price="101.25 " data-currency="SAR " data-is-donation=" ">
+                                    <span class="sicon-cart "></span>
+                                    <span>إضافة للسلة</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section ">
+            <div class="container ">
+                <div class="section-header d-flex ">
+                </div>
+                <div class="row products-grid ">
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="https://discord.gg/saqr " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/8.png " alt="Custom Package - بكج خاص " src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    Custom Package - بكج خاص
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                    <span class="product-price " dir="ltr ">$29.99</span>
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " dir="ltr ">$24.99</span>
+                                </p>
+                                <a href="https://discord.gg/saqr " class="product-add add_to_cart_btn " data-product-id="1892996512 " data-price="105.3 " data-currency="SAR " data-is-donation=" ">
+                                    <span class="sicon-cart "></span>
+                                    <span>إضافة للسلة</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="اولوية-الدخول-السريع-lvl-2-7-ايام/p1317696514.html " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/13.png " alt="Warehouse Heist - سرقة المستدوع " src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    Warehouse Heist - سرقة المستدوع
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                    <span class="product-price " dir="ltr ">$14.99</span>
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " dir="ltr ">$14.99</span>
+                                </p>
+                                <a href="https://discord.gg/saqr " class="product-add add_to_cart_btn " data-product-id="163766677 " data-price="5.13 " data-currency="SAR " data-is-donation=" ">
+                                    <span class="sicon-cart "></span>
+                                    <span>إضافة للسلة</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="اولوية-الدخول-السريع-lvl-3-7-ايام/p1423858837.html " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/14.png " alt="Shark Sales - تجارة القروش " src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    Shark Sales - تجارة القروش
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                    <span class="product-price " dir="ltr ">$24.99</span>
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " dir="ltr ">$24.99</span>
+                                </p>
+                                <a href="https://discord.gg/saqr " class="product-add add_to_cart_btn " data-product-id="1423858837 " data-price="151.2 " data-currency="SAR " data-is-donation=" ">
+                                    <span class="sicon-cart "></span>
+                                    <span>إضافة للسلة</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-lg-3 ">
+                        <div class="product ">
+                            <a href="اولوية-الدخول-السريع-lvl-1-24h/p334039267.html " rel="canonical ">
+                                <span class="img-cont ">
+<img data-src="items/15.png " alt="Drug Sales - تجاررة الممنوعات " src="themes/default/assets/images/product-loading.png " class="lazyload ">
+</span>
+                                <h3 class="product-title ">
+                                    Drug Sales - تجاررة الممنوعات
+                                </h3>
+                                <p class="product-price hidden-md hidden-lg hidden-sm ">
+                                    <span class="product-price " dir="ltr ">$19.99</span>
+                                </p>
+                            </a>
+                            <div class="product-footer ">
+                                <p class="product-price hidden-xs ">
+                                    <span class="product-price " dir="ltr ">$19.99</span>
+                                </p>
+                                <a href="https://discord.gg/saqr " class="product-add add_to_cart_btn " data-product-id="334039267 " data-price="14.85 " data-currency="SAR " data-is-donation=" ">
+                                    <span class="sicon-cart "></span>
+                                    <span>إضافة للسلة</span>
+                                </a>
+                            </div>
+        </section>
+        <section class="u-light py-5 text-center ">
+            <div class="container ">
+                <h2 class="section--title mb-4 ">مزايا المتجر</h2>
+                <div class="row ">
+                    <div class="col-sm-6 col-md-4 feature-item ">
+                        <div class="feature-item__icon ">
+                            <i class="sicon-headset "></i>
+                        </div>
+                        <h3> دعم فني </h3>
+                        <p>خدمة على مدار الساعة طوال أيام الأسبوع </p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 feature-item ">
+                        <div class="feature-item__icon ">
+                            <i class="sicon-rocket "></i>
+                        </div>
+                        <h3> تسليم الخدمات </h3>
+                        <p>يتم إجراء جميع السكربتات بواسطة المتجر ويمكنك تنزيلها بعد الشراء ، عن طريق الدسكورد</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 feature-item ">
+                        <div class="feature-item__icon ">
+                            <i class="sicon-crdit-card-alt "></i>
+                        </div>
+                        <h3> تعدد طرق الدفع </h3>
+                        <p> Visa, MasterCard, Apple Pay, Mada, STC Pay, Bank Transfer </p>
+                    </div>
+                </div>
+            </div>
+
+            </li>
+            </ul>
+        </section>
+        <script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js " data-cf-settings="033f5385e427c819b4dcdbe9-|49 " defer=" "></script>
+        <script defer src="beacon.min.js " data-cf-beacon='{"rayId ":"73ae086139a9e6c4 ","token ":" ","version ":"2022.6.0 ","si ":100}'></script>
+        <footer>
+            <div class="footer-main ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-md-4 ">
+                            <h2 class="footer-title ">
+                                <span>من نحن</span>
+                            </h2>
+                            <p>متجر صقر لبيع سكربتات وملفات الفايف ام https://discord.gg/saqr
+                            </p>
+                            <div class="store-contact ">
+                                <a href="index.html ">
+                                    <i class="sicon-contact-book "></i> Contact Us
+                                </a>&nbsp;
+                            </div>
+                            <div class="store-contact ">
+                            </div>
+                            <div class="store-certificate ">
+                            </div>
+                            <div class="modal fade " id="tax_certificate_modal ">
+                                <div class="modal-dialog " role="document ">
+                                    <div class="modal-content ">
+                                        <div class="modal-header no-border ">
+                                        </div>
+                                        <div class="modal-body text-center ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0 ">
+                            <h2 class="footer-title ">
+                                <span>تواصل معنا</span>
+                            </h2>
+                            <ul class="social clearfix ">
+                                <li class="social__item ">
+                                    <a href="https://www.instagram.com/saqrstorex/ " target="_blank ">
+                                        <span class="sicon-instagram "></span>
+                                    </a>
+                                </li>
+                                <li class="social__item ">
+                                    <a href="https://twitter.com/saqrstorex " target="_blank ">
+                                        <span class="sicon-twitter "></span>
+                                    </a>
+                                </li>
+                                <li class="social__item ">
+                                    <a href="https://www.tiktok.com/@saqrstorex " target="_blank ">
+                                        <span class="sicon-tiktok "></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-sub ">
+                <div class="container ">
+                    <div class="fs-cont ">
+                        <div class="fs-rights ">
+                            <p class="mb-4 mb-md-0 ">
+                                الحقوق محفوظة SAQR STORE © 2024
+                            </p>
+                        </div>
+                        <div class="fs-payment ">
+                            <div class="icons ">
+                                <div class="store-certificate ">
+                                    </a>
+                                </div>
+                                <div class="modal fade " id="tax_certificate_modal ">
+                                    <div class="modal-dialog " role="document ">
+                                        <div class="modal-content ">
+                                            <div class="modal-header no-border ">
+                                            </div>
+                                            <div class="modal-body text-center ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                </div>
+        </footer>
+        <div class="nav-overlay "></div>
+        <div id="div_ajax "></div>
+        <script type="033f5385e427c819b4dcdbe9-text/javascript ">
+        </script>
+        <script src="js/es.js " type="033f5385e427c819b4dcdbe9-text/javascript "></script>
+        <script src="js/app.js " type="033f5385e427c819b4dcdbe9-text/javascript "></script>
+        <script src="js/themes.js " type="033f5385e427c819b4dcdbe9-text/javascript "></script>
+        <script type="033f5385e427c819b4dcdbe9-application/javascript ">
+        </script>
+        </script>
+        <script type="033f5385e427c819b4dcdbe9-text/javascript " src="themes/default/assets/js/plugins/slick.js "></script>
+        <script type="033f5385e427c819b4dcdbe9-text/javascript " src="themes/theme_6/assets/js/app.js "></script>
+        <script type="033f5385e427c819b4dcdbe9-text/javascript " src="themes/default/assets/js/plugins/jquery-ui.min.js "></script>
+        <link href="https://cdn.assets.salla.network/prod/stores/css/intlTelInput.53d3f9e5ce3c027b0bddc8be6f8c1283.css " rel="stylesheet ">
+
+<script src=" https://cdn.polyfill.io/v3/polyfill.min.js?flags=gated&features=Promise%2CObject.assign%2CObject.values%2CArray.prototype.find%2CArray.prototype.findIndex%2CArray.prototype.includes%2CString.prototype.includes%2CString.prototype.startsWith%2CString.prototype.endsWith%2Cdocument.getElementsByClassName%2CPromise.prototype.finally%2CString.prototype.includes%2CNumber.isNaN%2Ces6%2CEvent%2CCustomEvent
+                            " type="904c29146c385c1fddf1a6eb-text/javascript "></script>
+<script type="application/ld+json ">{"@context ":"https:\/\/schema.org ","@graph ":[{"@type ":"Organization ","name ":"MTRP ","url ":"https:\/\/mtrp.store ","logo ":"https:\/\/cdn.salla.sa\/PvnxK\/zvXQvIC2bjWmqtl3IuBYeCPBs0wk5NBxbSlEQwlU.png ","address
+                            ":{"@type ":"PostalAddress ","addressCountry ":"السعودية ","addressRegion ":"الرياض "},"contactPoint ":{"@type ":"ContactPoint ","contactType ":"customer service ","telephone ":"+966501040216 "}}]}</script><script type="application/ld+json
+                            ">{"@context ":"https:\/\/schema.org ","@graph ":[{"@type ":"WebSite ","name ":"MTRP ","url ":"https:\/\/mtrp.store ","potentialAction ":{"@type ":"SearchAction ","target ":{"@type ":"EntryPoint ","actionPlatform ":"https:\/\/mtrp.store\/search?q={query}
+                            ","urlTemplate ":"https:\/\/mtrp.store\/search?q={query} "},"query-input ":"required name=query ","query ":"required "}}]}</script>
+<script type="904c29146c385c1fddf1a6eb-text/javascript ">
+        <div class="pace-demo hidden ">
+            <div class="theme_tail_circle ">
+                <div class="pace_progress " data-progress-text="60% " data-progress="60 "></div>
+                <div class="pace_activity "></div>
+            </div>
+        </div>
+        <div id="div_ajax "></div>
+        <script type="033f5385e427c819b4dcdbe9-text/javascript ">
+        </script>
+        <script src='themes/default/assets/js/pages/add_cart.js' type="033f5385e427c819b4dcdbe9-text/javascript "></script>
+
+</html>
